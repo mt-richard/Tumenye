@@ -17,7 +17,7 @@ const DesktopNavigation = () => {
   return ( 
 
     <div>
-      <div className='sm:hidden flex justify-between pl-10 pr-40 p-5 bg-gray-800'>
+      <div className='hidden md:flex justify-between pl-10 pr-40 p-5 bg-gray-800'>
         <div>
           <h2 className='text-white'>Tumenye Ikinyarwanda</h2>
         </div>
