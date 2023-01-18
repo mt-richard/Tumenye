@@ -17,7 +17,7 @@ const Navigation = () => {
   return ( 
 
     <div>
-      <div className='bg-gray-800 p-3 top-0 absolute w-full md:hidden'>
+      <div className='fixed bg-gray-800 p-3 top-0 absolute w-full md:hidden'>
         <h2 className='text-2xl text-center text-white uppercase'>Tumenye Ikinyarwanda</h2>
       </div>
 
