@@ -1,13 +1,31 @@
+import  Service from "./service";
+import ubuvuzi from '../images/ubuvuzi.png'
+import ubwami from '../images/ubwami.jpg'
+import ubworozi from '../images/ubworozi.jpg'
+
 const Home = () => {
     return ( 
-        <div>
+        <div className="w-full">
             <div className="banner pt-28 pb-10 pl-10 pr-10 md:pl-40 md:pt-20 md:pb-20">
                 <div className="content md:w-1/2">
-                    <h3 className="uppercase font-bold text-white pb-5">Tumenye Ikinyarwanda</h3>
-                    <p className="text-gray-400 text-xl font-light pb-5 leading-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci nisi, iure exercitationem ipsa architecto. Rerum unde quasi rem hic culpa quidem optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ipsum</p>
-                    <button className="bg-gray-800 text-white rounded p-2 coursor-pointer pl-5 pr-5">Menya Byinshi ...</button>
+                    <h3 className="uppercase font-bold text-white pb-10">Tumenye Ikinyarwanda</h3>
+                    <p className="text-gray-400 text-xl font-light pb-10 leading-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci nisi, iure exercitationem ipsa architecto. Rerum unde quasi rem hic culpa quidem optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ipsum</p>
+                    <button className="bg-[#Bd2c4b] text-white rounded p-2 coursor-pointer pl-5 pr-5">Menya Byinshi ...</button>
                 </div>
             </div>
+
+            {/* Services */}
+
+            <div className="pt-10 pb-20 ">
+                <h3 className="font-bold pb-5 md:pb-10 text-center text-2xl md:text-3xl text-gray-600">Menya Byinshi kuri Servisi Zikurikira</h3>
+                <div className="Services p-5 md:grid grid-cols-3 gap-5 md:pl-40 md:pr-40 w-full">
+                    <Service name="Ubuvuzi" photo={ubuvuzi} cont="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, repudianda."/>
+                    <Service name="Ubworozi" photo={ubworozi} cont="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, repudianda."/>
+                    <Service name="Ubwami"  photo={ubwami} cont="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, repudianda."/>
+                    <Service name="Ubuhinzi" photo={ubuvuzi} cont="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, repudianda."/>
+                </div>
+            </div>
+       
         </div>
      );
 }

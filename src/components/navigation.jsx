@@ -17,11 +17,11 @@ const Navigation = () => {
   return ( 
 
     <div>
-      <div className='fixed bg-gray-800 p-3 top-0 absolute w-full md:hidden'>
+      <div className='fixed bg-[#Bd2c4b] p-3 top-0  w-full md:hidden'>
         <h2 className='text-2xl text-center text-white uppercase'>Tumenye Ikinyarwanda</h2>
       </div>
 
-      <div className='w-full bottom-0 absolute pl-5 pr-5   bg-gray-400 md:hidden'>
+      <div className='w-full fixed bottom-0  pl-5 pr-5   bg-gray-400 md:hidden'>
           <ul className='flex'>
             {menu.map((item, id) => 
               

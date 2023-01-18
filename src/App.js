@@ -5,7 +5,7 @@ import Home from "./components/home.jsx";
 
 function App() {
   return (
-    <div className='bg-gray-300 h-[100vh]'>
+    <div>
       
       <DesktopNavigation />
       <Home />

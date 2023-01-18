@@ -17,9 +17,9 @@ const DesktopNavigation = () => {
   return ( 
 
     <div>
-      <div className='hidden fixed md:flex justify-between pl-10 pr-40 p-5 bg-gray-800'>
+      <div className='hidden fixed sticky md:flex w-full justify-between pl-10 pr-40 p-5 bg-[#Bd2c4b]'>
         <div>
-          <h2 className='text-white'>Tumenye Ikinyarwanda</h2>
+          <h2 className='text-white uppercase font-bold'>Tumenye Ikinyarwanda</h2>
         </div>
           <ul className='flex'>
             {menu.map((item, id) => 
