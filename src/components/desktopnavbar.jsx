@@ -1,4 +1,4 @@
-import homeicon from '../images/homeicon.svg'
+import homeicon from '../images/home.svg'
 import cart from '../images/cart.svg'
 import search from '../images/search.svg'
 import news from '../images/news.svg'

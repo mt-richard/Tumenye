@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .banner{
-    background-image: url('./images/bookbr.jpg');
+    background-image: url('./images/book.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,7 +13,7 @@
 
 @media screen and (max-width:400px) {
     .banner{
-        background-image: url('./images/bookbr.jpg');
+        background-image: url('./images/book.png');
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
