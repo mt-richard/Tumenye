@@ -17,13 +17,13 @@ const Home = () => {
 
             {/* Services */}
 
-            <div className="pt-10 pb-20 ">
-                <h3 className="font-bold pb-5 md:pb-10 text-center text-xl md:text-3xl text-gray-600">Menya Byinshi kuri Servisi Zikurikira</h3>
+            <div className="bg-gray-100 pt-10 pb-10 ">
+                <h3 className="font-bold pb-3 md:pb-10 text-center text-xl md:text-3xl text-gray-600">Menya Byinshi kuri Servisi Zikurikira</h3>
                 <div className="Services p-5 md:grid grid-cols-3 gap-5 md:pl-40 md:pr-40 w-full">
-                    <Service name="Ubuvuzi" photo={ubuvuzi} cont="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, repudianda."/>
-                    <Service name="Ubworozi" photo={ubworozi} cont="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, repudianda."/>
-                    <Service name="Ubwami"  photo={ubwami} cont="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, repudianda."/>
-                    <Service name="Ubuhinzi" photo={ubuhinzi} cont="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, repudianda."/>
+                    <Service name="Ubuvuzi" photo={ubuvuzi} cont="Lorem ipsum dolor sit amet consectetur"/>
+                    <Service name="Ubworozi" photo={ubworozi} cont="Lorem ipsum dolor sit amet consectetur"/>
+                    <Service name="Ubwami"  photo={ubwami} cont="Lorem ipsum dolor sit amet consectetur"/>
+                    <Service name="Ubuhinzi" photo={ubuhinzi} cont="Lorem ipsum dolor sit amet consectetur"/>
                 </div>
             </div>
        

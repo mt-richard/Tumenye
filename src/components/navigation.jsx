@@ -4,6 +4,7 @@ import cart from '../images/cart.svg'
 import search from '../images/search.svg'
 import news from '../images/news.svg'
 import user from '../images/user.svg'
+import logo from '../images/logo.svg'
 
 const Navigation = () => {
 
@@ -18,8 +19,12 @@ const Navigation = () => {
   return ( 
 
     <div>
-      <div className='fixed bg-[#Bd2c4b] p-3 top-0  w-full md:hidden'>
-        <h2 className='text-white uppercase font-bold'>Tumenye Ikinyarwanda</h2>
+      <div className='fixed flex bg-[#Bd2c4b] p2 pl-5 top-0  w-full md:hidden'>
+        <img src={logo} alt='...' className='w-14 '></img>
+        <div className='p-3 pl-5'>
+          <h2 className='text-white uppercase font-bold'>Tumenye </h2>
+          <span className='text-[14px] text-gray-200 font-light uppercase'>Ikinyarwanda</span>
+        </div>
       </div>
 
       <div className='w-full fixed bottom-0  pl-5 pr-5 border-t  border-gray-400 bg-white md:hidden'>

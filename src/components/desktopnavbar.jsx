@@ -3,6 +3,8 @@ import cart from '../images/cart.svg'
 import search from '../images/search.svg'
 import news from '../images/news.svg'
 import user from '../images/user.svg'
+import logo from '../images/logo.svg'
+
 
 const DesktopNavigation = () => {
 
@@ -17,14 +19,18 @@ const DesktopNavigation = () => {
   return ( 
 
     <div>
-      <div className='hidden fixed sticky md:flex w-full justify-between pl-10 pr-40 p-5 bg-[#Bd2c4b]'>
-        <div>
-          <h2 className='text-white uppercase font-bold'>Tumenye Ikinyarwanda</h2>
+      <div className='hidden fixed sticky md:flex w-full justify-between pl-10 pr-40 p- bg-[#Bd2c4b]'>
+        <div className='flex'>
+          <img src={logo} alt='...' className='w-14 '></img>
+          <div className='p-3 pl-5'>
+            <h2 className='text-white uppercase font-bold'>Tumenye </h2>
+            <span className='text-[14px] text-gray-200 font-light uppercase'>Ikinyarwanda</span>
+          </div>
         </div>
-          <ul className='flex'>
+          <ul className='flex p-5'>
             {menu.map((item, id) => 
               
-              <li key={id} className="text-white font-light">
+              <li key={id} className="text-white font-light hover:font-bold hover:text-gray-100">
                 <a href={item.href} className="flex pl-5 pr-5">
                   {/* <img src={item.icon} alt={item.alt} className="w-5"/> */}
                   <span className='text-[15px] ml-3 justify-between'>{item.name}</span>
