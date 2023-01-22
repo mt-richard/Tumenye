@@ -6,6 +6,7 @@ import Home from './pages/home';
 import News from './pages/news';
 import Search from './pages/search';
 import NotFound from './pages/404';
+import NewsDisplay from './pages/displayNews';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route index element={<Home/>} />
             <Route path='/service' element={<Services/>}/>
             <Route path='/news' element={<News/>}/>
+            <Route path='/news/:id' element={<NewsDisplay/>}/>
             <Route path='/search' element={<Search/>}/>
           </Route>
           <Route path='/*' element={<NotFound/>}/>
