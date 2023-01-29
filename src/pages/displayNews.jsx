@@ -5,6 +5,7 @@ import pic1 from '../images/home.jpg'
 import pic2 from '../images/book.jpg'
 import arrow from '../images/arrow.svg'
 import barrow from '../images/barrow.svg'
+import Commentbox from "../components/commentbox";
 
 const NewsDisplay = () =>{
     return(
@@ -23,9 +24,15 @@ const NewsDisplay = () =>{
                             <div className="image w-full">
                                 <img src={pic2} alt="news Picture" className="rounded"></img>
                             </div>
-                            <div className="content">
+                            <div className="content border-b">
                                 <h3 className="pt-3 font-bold pb-5 text-2xl text-gray-600">Lorem ipsum dolor sit amet.</h3>
                                 <p className="font-light text-gray-600 leading-7 pl-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam excepturi iste tempora, debitis sapiente soluta minus, fugiat, fugit eaque ab perspiciatis? Sequi optio deserunt laudantium architecto fugit quibusdam odit dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit numquam debitis voluptatibus, eum cupiditate quam enim perspiciatis, nesciunt, atque illum pariatur ut libero in laborum unde eaque adipisci quod amet repudiandae iusto ad? Natus repellat perferendis temporibus expedita, quis magnam.</p>
+                            </div>
+
+
+                            {/* comments box */}
+                            <div className="comm">
+                                <Commentbox />
                             </div>
                         </div>
                     </div>
