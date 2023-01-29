@@ -4,6 +4,9 @@ import ubwami from '../images/ubwami.jpg'
 import ubworozi from '../images/ubworozi.jpg'
 import ubuhinzi from '../images/ubuhinzi.jpg'
 import arrow from '../images/arrow.svg'
+import imigani from '../images/imigani.jpg'
+import sakwe from '../images/sakwe.jpg'
+import inshobera from '../images/inshobera.jpg'
 
 
 const Home = () => {
@@ -24,8 +27,12 @@ const Home = () => {
                 <div className="Services p-5 md:grid grid-cols-3 gap-5 md:pl-40 md:pr-40 w-full">
                     <Service name="Ubuvuzi" arrow={arrow} photo={ubuvuzi} cont="Lorem ipsum dolor sit amet consectetur"/>
                     <Service name="Ubworozi" arrow={arrow} photo={ubworozi} cont="Lorem ipsum dolor sit amet consectetur"/>
-                    <Service name="Ubwami" arrow={arrow}  photo={ubwami} cont="Lorem ipsum dolor sit amet consectetur"/>
                     <Service name="Ubuhinzi" arrow={arrow} photo={ubuhinzi} cont="Lorem ipsum dolor sit amet consectetur"/>
+                    <Service name="Ubwami" arrow={arrow}  photo={ubwami} cont="Lorem ipsum dolor sit amet consectetur"/>
+                    <Service name="Ubucuruzi" arrow={arrow} photo={ubuhinzi} cont="Lorem ipsum dolor sit amet consectetur"/>
+                    <Service name="Imigani" arrow={arrow} photo={imigani} cont="Lorem ipsum dolor sit amet consectetur"/>
+                    <Service name="Ibisakuzo" arrow={arrow} photo={sakwe} cont="Lorem ipsum dolor sit amet consectetur"/>
+                    <Service name="Inshoberamahanga" arrow={arrow} photo={inshobera} cont="Lorem ipsum dolor sit amet consectetur"/>
                 </div>
             </div>
        
