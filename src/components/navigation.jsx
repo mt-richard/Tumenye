@@ -1,19 +1,25 @@
 // import homeicon from '../images/homeicon.svg'
 import home from '../images/home.svg'
+import activehome from '../images/active-home.svg'
 import cart from '../images/cart.svg'
+import activecart from '../images/active-cart.svg'
 import search from '../images/search.svg'
+import activesearch from '../images/active-search.svg'
 import news from '../images/news.svg'
+import activenews from '../images/active-news.svg'
 import user from '../images/user.svg'
+import activeuser from '../images/active-user.svg'
 import logo from '../images/logo.svg'
+import { Link } from 'react-router-dom'
 
 const Navigation = () => {
 
   const menu = [
-    { name: "Ahabanza", icon:  home , href:"/"},
-    { name: "Serivisi", icon:cart , href:"/service"},
-    { name: "Gushaka", icon: search, href:"/search"},
-    {name:"Inkuru", icon:news, href:"/news"},
-    {name:"Konti", icon:user, href:"/user"}
+    { name: "Ahabanza", iconedit: activehome, icon:  home , href:"/"},
+    { name: "Serivisi", iconedit: activecart, icon:cart , href:"/service"},
+    { name: "Gushaka", iconedit: activesearch, icon: search, href:"/search"},
+    {name:"Inkuru", iconedit: activenews, icon:news, href:"/news"},
+    {name:"Konti", iconedit: activeuser, icon:user, href:"/user"}
   ]
 
   return ( 
@@ -32,10 +38,14 @@ const Navigation = () => {
             {menu.map((item, id) => 
               
               <li key={id} className="hover:bg-gray-300 w-1/5 pt-5 pb-5 p-2">
-                <a href={item.href} className="text-center">
-                  <img src={item.icon} alt={item.alt} className="w-full h-7 sm:pr-4"/>
+                <Link to={item.href} className="text-center">
+                  {(isActive) => isActive ? (
+                    <img src={item.iconedit} alt={item.alt} className="w-full h-7 sm:pr-4"/>
+                  ):(
+                    <img src={item.icon} alt={item.alt} className="w-full h-7 sm:pr-4"/>
+                  )}
                   {/* <span className='text-[15px] ml-3 justify-between'>{item.name}</span> */}
-                </a>
+                </Link>
               </li>
               
           )}
