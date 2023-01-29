@@ -1,16 +1,16 @@
 // import homeicon from '../images/homeicon.svg'
-import home from '../images/home.svg'
+import home from '../images/home.svg';
 import activehome from '../images/active-home.svg'
-import cart from '../images/cart.svg'
+import cart from '../images/cart.svg';
 import activecart from '../images/active-cart.svg'
-import search from '../images/search.svg'
+import search from '../images/search.svg';
 import activesearch from '../images/active-search.svg'
-import news from '../images/news.svg'
+import news from '../images/news.svg';
 import activenews from '../images/active-news.svg'
-import user from '../images/user.svg'
+import user from '../images/user.svg';
 import activeuser from '../images/active-user.svg'
-import logo from '../images/logo.svg'
-import { Link } from 'react-router-dom'
+import logo from '../images/logo.svg';
+import { NavLink } from 'react-router-dom'
 
 const Navigation = () => {
 
@@ -38,14 +38,14 @@ const Navigation = () => {
             {menu.map((item, id) => 
               
               <li key={id} className="hover:bg-gray-300 w-1/5 pt-5 pb-5 p-2">
-                <Link to={item.href} className="text-center">
-                  {(isActive) => isActive ? (
+                <NavLink to={item.href}  className="text-center">
+                  {({isActive})=>isActive ? (
                     <img src={item.iconedit} alt={item.alt} className="w-full h-7 sm:pr-4"/>
-                  ):(
-                    <img src={item.icon} alt={item.alt} className="w-full h-7 sm:pr-4"/>
-                  )}
+                   ):( 
+                   <img src={item.icon} alt={item.alt} className="w-full h-7 sm:pr-4"/>
+                   )}
                   {/* <span className='text-[15px] ml-3 justify-between'>{item.name}</span> */}
-                </Link>
+                </NavLink>
               </li>
               
           )}
