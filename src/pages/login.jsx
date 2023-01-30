@@ -15,7 +15,7 @@ function hideModal(){
 }
 
     return (
-        <div className="p-5">
+        <div className="p-3">
           
             <>
             {/* <div className="z-0 w-full h-[800px] md:h-[100vh]  bg-gray-900"></div> */}
