@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "../components/navigation";
+import Footer from "../components/footer";
 import DesktopNavigation from "../components/desktopnavbar";
 import { Outlet } from "react-router-dom";
 
@@ -9,6 +10,7 @@ import { Outlet } from "react-router-dom";
                 <DesktopNavigation />
                 <Navigation />
                 <Outlet/>
+                <Footer />
             </div>
         )
 }
