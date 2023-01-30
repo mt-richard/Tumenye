@@ -4,6 +4,7 @@ import search from '../images/search.svg'
 import news from '../images/news.svg'
 import user from '../images/user.svg'
 import logo from '../images/logo.svg'
+import { NavLink } from 'react-router-dom'
 
 
 const DesktopNavigation = () => {
@@ -31,10 +32,10 @@ const DesktopNavigation = () => {
             {menu.map((item, id) => 
               
               <li key={id} className="text-white font-light hover:font-bold hover:text-gray-100">
-                <a href={item.href} className="flex pl-5 pr-5">
+                <NavLink to={item.href} className={({isActive}) => isActive ? 'flex font-bold pl-5 pr-5 ':'flex pl-5  pr-5'}>
                   {/* <img src={item.icon} alt={item.alt} className="w-5"/> */}
                   <span className='text-[15px] ml-3 justify-between'>{item.name}</span>
-                </a>
+                </NavLink>
               </li>
               
           )}
