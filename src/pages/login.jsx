@@ -15,10 +15,10 @@ function hideModal(){
 }
 
     return (
-        <div>
+        <div className="p-5">
           
             <>
-            <div className="z-0 w-full h-[800px] md:h-[100vh]  bg-gray-900"></div>
+            {/* <div className="z-0 w-full h-[800px] md:h-[100vh]  bg-gray-900"></div> */}
             <div className="z-10 absolute top-10 md:w-1/4 md:ml-[calc(50%-13rem)] log bg-gray-200 p-5 pb-10 mt-28 md:mt-20 ml-1 md:ml-8 rounded">
                 <div className="flex pb-5 justify-between head">
                     <span></span>
