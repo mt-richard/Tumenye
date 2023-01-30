@@ -30,7 +30,7 @@ function hideModal(){
 
                     
                     <div className="pt-5 p-2">
-                        <label htmlFor="" className="text-[14px] font-light pb-2 ">Email</label>
+                        <label htmlFor="" className="text-[14px] text-gray-600 font-light pb-2 ">Email</label>
                         <input type="email" name="email" placeholder="Type Your Email address" className="w-full rounded p-2 pl-5 outline-none text-light text-gray-400" />
                     </div>
                     <div className="p-2">
@@ -42,7 +42,7 @@ function hideModal(){
                     </div>
 
                 </form>
-                <p className="text-[14px] w-full text-center">Nta konti ufite? <Link to="/" className="font-bold text-[#Bd2c4b]">Yifungure</Link></p>
+                <p className="text-[14px] text-gray-600 w-full text-center">Nta konti ufite? <Link to="/" className="font-bold text-[#Bd2c4b]">Yifungure</Link></p>
             </div>
             </>
             
