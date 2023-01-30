@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const  Service = (props) => {
     return(
         <div>
-            <Link to="/news" >
+            <Link to="/" >
             <div className="p-2 mycard bg-white rounded flex gap-2 mb-5 shadow-sm shadow-gray-300" >
                 <div className="w-40 "> 
                     <img src={props.photo} alt=".." className='rounded h-full object-cover' />
