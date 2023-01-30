@@ -53,8 +53,8 @@ const NewsDisplay = () =>{
 
                     {/* second / right sidebar */}
                     <div className="second p-5 md:w-1/3">
-                        <h3 className="latest">Inkuru Ziheruka</h3>
-                        <p>Kurikirana Inkuru Ziheruka</p>
+                        <h3 className="latest uppercase font-bold text-gray-600 ">Inkuru Ziheruka</h3>
+                        <p className="pb-5 font-light">Kurikirana Inkuru Ziheruka</p>
                         <New title="Lorem ipsmin" content="Note that the development build is not optimized." photo={pic1} arrow={arrow}/>
                     </div>
 

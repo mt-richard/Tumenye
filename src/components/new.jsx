@@ -13,7 +13,7 @@ const New = (props) => {
                 <div className="content pt-2 p-5 border-t">
                     <h3 className="font-bold text-gray-600">{props.title}</h3>
                     <p className="font-light text-[14px] pl-5 border-b">{props.content}</p>
-                    <Link to="/" className="" >
+                    <Link to="/news/:id" className="" >
                         <div className="flex gap-2 pl-5 pt-2">
                             <img src={props.arrow} className="w-3"></img>
                             <span className="text-[#bd2c4b] text-[14px]">Menya Birambuye ...</span>

@@ -14,7 +14,7 @@ const DesktopNavigation = () => {
     { name: "Serivisi", icon:cart , href:"/service"},
     { name: "Gushaka", icon: search, href:"/search"},
     {name:"Inkuru", icon:news, href:"/news"},
-    {name:"Konti", icon:user, href:"/user"}
+    {name:"Konti", icon:user, href:"/admin"}
   ]
 
   return ( 
