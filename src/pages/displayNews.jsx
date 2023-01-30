@@ -24,6 +24,9 @@ const NewsDisplay = () =>{
                         <div className="newsdisplay w-full">
                             <div className="image w-full">
                                 <img src={pic2} alt="news Picture" className="rounded"></img>
+                                <div className="time text-right w-full">
+                                    <span className="text-[11px]">Created on,<span className="font-bold"> 03-12-2023 </span></span>
+                                </div>
                             </div>
                             <div className="content border-b pb-5">
                                 <h3 className="pt-3 font-bold pb-5 text-2xl text-gray-600">Lorem ipsum dolor sit amet.</h3>
