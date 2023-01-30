@@ -4,7 +4,7 @@ const Footer = () => {
     return (
       <div className="footer bg-gray-700 p-10  md:pt-10 md:pl-40 md:pr-40">
         <div className="footer-card md:flex">
-          <div className="card1 pb-10 md:w-1/4 pr-3">
+          <div className="card1 pb-5 md:pb-10 md:w-1/4 pr-3">
             <h3 className="text-[#Bd2c4b] text-xl font-bold pb-5">Tumenye Ikinyarwanda</h3>
             <p className="text-gray-200 font-light">
               Far far away, behind the word mountains, far from the countries.
@@ -22,8 +22,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="card1 pb-10 md:w-1/4">
-            <h3 className="text-[#Bd2c4b] text-xl font-bold pb-5">Explore</h3>
+          <div className="card1  pb-5 md:pb-10 md:w-1/4">
+            <h3 className="text-[#Bd2c4b] text-xl font-bold md:pb-5">Explore</h3>
             <div className="links text-gray-300 grid grid-cols-1">
               <Link
                 to="/about"
@@ -64,8 +64,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="card1 pb-10 md:w-1/4">
-            <h3 className="text-[#Bd2c4b] text-xl font-bold pb-5">Info</h3>
+          <div className="card1  pb-5 md:pb-10 md:w-1/4">
+            <h3 className="text-[#Bd2c4b] text-xl font-bold md:pb-5">Info</h3>
             <div className="links text-gray-300 grid grid-cols-1">
               <Link
                 to="/about"
@@ -106,8 +106,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="card1 pb-10 md:w-1/4">
-            <h3 className="text-[#Bd2c4b] text-xl font-bold pb-5">Company</h3>
+          <div className="card1  pb-5 md:pb-10 md:w-1/4">
+            <h3 className="text-[#Bd2c4b] text-xl font-bold md:pb-5">Company</h3>
             <div className="links text-gray-300 grid grid-cols-1">
               <Link
                 to="/service"
@@ -149,7 +149,7 @@ const Footer = () => {
           </div>
 
           <div className="card1 md:w-1/4">
-            <h3 className="text-[#Bd2c4b] text-xl font-bold pb-5">
+            <h3 className="text-[#Bd2c4b] text-xl font-bold md:pb-5">
               Have a Question ?
             </h3>
             <div className="flex">

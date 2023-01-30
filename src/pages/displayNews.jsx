@@ -6,6 +6,7 @@ import pic2 from '../images/book.jpg'
 import arrow from '../images/arrow.svg'
 import barrow from '../images/barrow.svg'
 import Commentbox from "../components/commentbox";
+import CommentForm from "../components/Commentform";
 
 const NewsDisplay = () =>{
     return(
@@ -31,12 +32,18 @@ const NewsDisplay = () =>{
 
 
                             {/* comments box */}
-                            <div className="comm">
+                            <div className="comm border-b pb-5">
                                 <h3 className="uppercase text-[#Bd2c4b] text-[14px] underline p-5">Comments</h3>
                                 <Commentbox date="01-01-2023" userprofile={pic1} username="Serge Ganza" comment="If you need to use a one-off grid-auto-columns value that doesn’t make sense to include in your theme, use square brackets to generate a property on the fly using any arbitrary value."/>
                                 <Commentbox date="01-01-2023" userprofile={pic1} username="Prince Honre" comment="Learn more about arbitrary value support in the arbitrary values documentation."/>
                                 <Commentbox date="01-01-2023" userprofile={pic1} username="Shukuru M" comment="You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more."/>
                                 
+                            </div>
+
+                            {/* comment Form */}
+                            <div className="commform pt-4">
+                            
+                                <CommentForm />
                             </div>
                         </div>
                     </div>
