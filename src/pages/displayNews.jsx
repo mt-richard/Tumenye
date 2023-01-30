@@ -24,7 +24,7 @@ const NewsDisplay = () =>{
                             <div className="image w-full">
                                 <img src={pic2} alt="news Picture" className="rounded"></img>
                             </div>
-                            <div className="content border-b">
+                            <div className="content border-b pb-5">
                                 <h3 className="pt-3 font-bold pb-5 text-2xl text-gray-600">Lorem ipsum dolor sit amet.</h3>
                                 <p className="font-light text-gray-600 leading-7 pl-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam excepturi iste tempora, debitis sapiente soluta minus, fugiat, fugit eaque ab perspiciatis? Sequi optio deserunt laudantium architecto fugit quibusdam odit dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit numquam debitis voluptatibus, eum cupiditate quam enim perspiciatis, nesciunt, atque illum pariatur ut libero in laborum unde eaque adipisci quod amet repudiandae iusto ad? Natus repellat perferendis temporibus expedita, quis magnam.</p>
                             </div>
@@ -32,7 +32,11 @@ const NewsDisplay = () =>{
 
                             {/* comments box */}
                             <div className="comm">
-                                <Commentbox />
+                                <h3 className="uppercase text-[#Bd2c4b] text-[14px] underline p-5">Comments</h3>
+                                <Commentbox date="01-01-2023" userprofile={pic1} username="Serge Ganza" comment="If you need to use a one-off grid-auto-columns value that doesn’t make sense to include in your theme, use square brackets to generate a property on the fly using any arbitrary value."/>
+                                <Commentbox date="01-01-2023" userprofile={pic1} username="Prince Honre" comment="Learn more about arbitrary value support in the arbitrary values documentation."/>
+                                <Commentbox date="01-01-2023" userprofile={pic1} username="Shukuru M" comment="You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more."/>
+                                
                             </div>
                         </div>
                     </div>
