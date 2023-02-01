@@ -10,8 +10,14 @@ import arrow from '../images/arrow.svg'
 import imigani from '../images/imigani.jpg'
 import sakwe from '../images/sakwe.jpg'
 import inshobera from '../images/inshobera.jpg'
+import { useEffect } from 'react';
 
 const Imigani = () =>{
+useEffect(()=>{
+  window.scrollTo(0,0)
+})
+
+
     var data = [
       
 {id: 1, umugani: "Agafuni kabagara ubucuti ni akarenge."},

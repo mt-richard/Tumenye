@@ -2,6 +2,8 @@
 import React from "react"
 import New from "../components/new"
 import pic1 from '../images/home.jpg'
+import pic3 from '../images/ubwami.jpg'
+import pic2 from '../images/ubuvuzi.png'
 import arrow from '../images/arrow.svg'
 
 const News = () =>{
@@ -12,10 +14,10 @@ const News = () =>{
                 <p className="text-[14px] md:text-lg font-light">Kurikirana inkuru zatambutse kurubuga rwacu.</p>
                 <div className="pt-5 md:grid grid-cols-3 md:gap-10 rounded md:pl-10 md:pr-18 lg:pl-0 lg:pr-0">
                     <New title="Lorem ipsmin" content="Note that the development build is not optimized." photo={pic1} arrow={arrow}/>
+                    <New title="Lorem ipsmin" content="Note that the development build is not optimized." photo={pic2} arrow={arrow}/>
+                    <New title="Lorem ipsmin" content="Note that the development build is not optimized." photo={pic3} arrow={arrow}/>
                     <New title="Lorem ipsmin" content="Note that the development build is not optimized." photo={pic1} arrow={arrow}/>
-                    <New title="Lorem ipsmin" content="Note that the development build is not optimized." photo={pic1} arrow={arrow}/>
-                    <New title="Lorem ipsmin" content="Note that the development build is not optimized." photo={pic1} arrow={arrow}/>
-                    <New title="Lorem ipsmin" content="Note that the development build is not optimized." photo={pic1} arrow={arrow}/>
+                    <New title="Lorem ipsmin" content="Note that the development build is not optimized." photo={pic2} arrow={arrow}/>
                 </div>
             </div>
         </div>

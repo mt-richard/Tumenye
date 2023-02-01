@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import New from "../components/new"
 import pic1 from '../images/home.jpg'
@@ -9,6 +10,11 @@ import Commentbox from "../components/commentbox";
 import CommentForm from "../components/Commentform";
 
 const NewsDisplay = () =>{
+
+    useEffect(()=>{
+        window.scrollTo(0,0)
+      })
+
     return(
         <div>
             <div className="  bg-gray-100 pb-10 md:pl-40 md:pr-40 pt-20 md:pt-10">

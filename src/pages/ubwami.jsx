@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Service from '../components/service'
 
 import ubuvuzi from '../images/ubuvuzi.png'
@@ -12,6 +12,10 @@ import sakwe from '../images/sakwe.jpg'
 import inshobera from '../images/inshobera.jpg'
 
 const Ubwami = () =>{
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  })
+
     var data = [
         {
           ijambo: "agashungo",
