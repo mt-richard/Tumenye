@@ -7,6 +7,8 @@ import Home from './pages/home';
 import News from './pages/news';
 import Login from './pages/login';
 import Search from './pages/search';
+import Imigani from './pages/imigani';
+import Ubwami from './pages/ubwami';
 import NotFound from './pages/404';
 import NewsDisplay from './pages/displayNews';
 
@@ -22,6 +24,8 @@ function App() {
             <Route path='/news' element={<News/>}/>
             <Route path='/news/:id' element={<NewsDisplay/>}/>
             <Route path='/search' element={<Search/>}/>
+            <Route path='/ubwami' element={<Ubwami/>}/>
+            <Route path='/imigani' element={<Imigani/>}/>
           </Route>
           <Route path='/admin' element={<Admin />}>
            <Route index element={<Login/>}/>

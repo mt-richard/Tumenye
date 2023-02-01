@@ -25,14 +25,14 @@ const Home = () => {
             <div className="bg-gray-100 pt-10 pb-10 ">
                 <h3 className="font-bold pb-3 md:pb-10 text-center text-xl md:text-3xl text-gray-600">Menya Byinshi kuri Servisi Zikurikira</h3>
                 <div className="Services p-5 md:grid grid-cols-3 gap-5 md:pl-40 md:pr-40 w-full">
-                    <Service name="Ubuvuzi" arrow={arrow} photo={ubuvuzi} cont="Lorem ipsum dolor sit amet consectetur"/>
-                    <Service name="Ubworozi" arrow={arrow} photo={ubworozi} cont="Lorem ipsum dolor sit amet consectetur"/>
-                    <Service name="Ubuhinzi" arrow={arrow} photo={ubuhinzi} cont="Lorem ipsum dolor sit amet consectetur"/>
-                    <Service name="Ubwami" arrow={arrow}  photo={ubwami} cont="Lorem ipsum dolor sit amet consectetur"/>
-                    <Service name="Ubucuruzi" arrow={arrow} photo={ubuhinzi} cont="Lorem ipsum dolor sit amet consectetur"/>
-                    <Service name="Imigani" arrow={arrow} photo={imigani} cont="Lorem ipsum dolor sit amet consectetur"/>
-                    <Service name="Ibisakuzo" arrow={arrow} photo={sakwe} cont="Lorem ipsum dolor sit amet consectetur"/>
-                    <Service name="Inshoberamahanga" arrow={arrow} photo={inshobera} cont="Lorem ipsum dolor sit amet consectetur"/>
+                    <Service link="/ubuvuzi" name="Ubuvuzi" arrow={arrow} photo={ubuvuzi} cont="Lorem ipsum dolor sit amet consectetur"/>
+                    <Service link="/ubworozi" name="Ubworozi" arrow={arrow} photo={ubworozi} cont="Lorem ipsum dolor sit amet consectetur"/>
+                    <Service link="/ubuhinzi" name="Ubuhinzi" arrow={arrow} photo={ubuhinzi} cont="Lorem ipsum dolor sit amet consectetur"/>
+                    <Service link="/ubwami" name="Ubwami" arrow={arrow}  photo={ubwami} cont="Lorem ipsum dolor sit amet consectetur"/>
+                    <Service link="/ubucuruzi" name="Ubucuruzi" arrow={arrow} photo={ubuhinzi} cont="Lorem ipsum dolor sit amet consectetur"/>
+                    <Service link="/imigani" name="Imigani" arrow={arrow} photo={imigani} cont="Lorem ipsum dolor sit amet consectetur"/>
+                    <Service link="/ibisakuzo" name="Ibisakuzo" arrow={arrow} photo={sakwe} cont="Lorem ipsum dolor sit amet consectetur"/>
+                    <Service link="/inshobera" name="Inshoberamahanga" arrow={arrow} photo={inshobera} cont="Lorem ipsum dolor sit amet consectetur"/>
                 </div>
             </div>
        
