@@ -14,7 +14,7 @@ import inshobera from '../images/inshobera.jpg'
 const Imigani = () =>{
     var data = [
       
-{id: 1, umugani: "AgaFuni kabagara ubucuti ni akarenge."},
+{id: 1, umugani: "Agafuni kabagara ubucuti ni akarenge."},
 {id: 2, umugani: "Agahinda k’inkoko kamenywa n’inkike yatoyemo."},
 {id: 3, umugani: "Agahinda si uguhora urira."},
 {id: 4, umugani: "Agahwa kari k’uwundi karahandurika."},
@@ -70,23 +70,11 @@ const Imigani = () =>{
                                 onClick={() => openubusobanuro(id)}
                                 >
                                 <div className="justify-between w-full flex md:pr-5 md:pl-5">
-                                   <span className='capitalize text-gray-600'>{item.umugani}</span> 
+                                   <span className=' text-gray-600'>{item.umugani}</span> 
 
-                                    <span className="font-bold text-xl ">
-                                    {selected === id ? "-" : "+"}
-                                    </span>
                                 </div>
                                 </button>
-                                <div
-                                className={
-                                    selected === id
-                                    ? "font-light text-gray-600 leading-8 p-3 md:pl-16 flex"
-                                    : "hidden"
-                                }
-                                >
-                                <img src={arrow} alt="" className='w-3'/>
-                                <span className='pl-2'>{item.ubusobanuro}</span>
-                                </div>
+                                
                             </>
                             ))}
                         </div>
