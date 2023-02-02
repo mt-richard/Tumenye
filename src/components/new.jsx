@@ -7,9 +7,12 @@ const New = (props) => {
             <Link to='/news/1'>
             <div className="newspanel bg-white w-80 mb-5 rounded shadow-lg">
                 <div className="photo h-60 ">
-                    <img src={props.photo} alt="" className="object-cover h-54 w-full rounded-t"></img>
-                    <p className="text-right font-light text-[13px] pt-1 pr-5">Created At : <b>2022-04-55</b></p>
+                    <img src={props.photo} alt="" className="object-cover h-full w-full rounded-t"></img>
                 </div>
+                <div className="text-right w-full ">
+                    <p className="font-light text-[13px] pt-1 pr-5">Created At : <b>2022-04-55</b></p>
+                </div>
+
                 <div className="content pt-2 p-5 border-t">
                     <h3 className="font-bold text-gray-600">{props.title}</h3>
                     <p className="font-light text-[14px] pl-5 border-b">{props.content}</p>
