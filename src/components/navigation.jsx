@@ -19,7 +19,7 @@ const Navigation = () => {
     { name: "Serivisi", iconedit: activecart, icon:cart , href:"/service"},
     { name: "Gushaka", iconedit: activesearch, icon: search, href:"/search"},
     {name:"Inkuru", iconedit: activenews, icon:news, href:"/news"},
-    {name:"Konti", iconedit: activeuser, icon:user, href:"/user"}
+    {name:"Konti", iconedit: activeuser, icon:user, href:"/admin"}
   ]
 
   return ( 
