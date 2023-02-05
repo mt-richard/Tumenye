@@ -32,7 +32,11 @@ const DesktopNavigation = () => {
             {menu.map((item, id) => 
               
               <li key={id} className="text-white font-light hover:font-bold hover:text-gray-100">
+<<<<<<< HEAD
+                <NavLink href={item.href} onClick={({isActive}) => isActive} className={({isActive}) => isActive ? 'font-bold flex pl-5 pr-5':'flex pl-5 pr-5'}>
+=======
                 <NavLink to={item.href} className={({isActive}) => isActive ? 'flex font-bold pl-5 pr-5 ':'flex pl-5  pr-5'}>
+>>>>>>> 5fd76042330404f7b066ef13357c0f69a01ee24f
                   {/* <img src={item.icon} alt={item.alt} className="w-5"/> */}
                   <span className='text-[15px] ml-3 justify-between'>{item.name}</span>
                 </NavLink>
