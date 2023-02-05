@@ -12,9 +12,9 @@ import sakwe from '../images/sakwe.jpg'
 import inshobera from '../images/inshobera.jpg'
 
 const Ubwami = () =>{
-  useEffect(()=>{
-    window.scrollTo(0,0)
-  })
+  // useEffect(()=>{
+  //   window.scrollTo(0,0)
+  // })
 
     var data = [
         {
@@ -161,7 +161,7 @@ const Ubwami = () =>{
               </div>
 
               {/* other options */}
-              <div className='md: p-5 md:w-1/3'>
+              <div className='md:p-5 md:w-1/3'>
               <h3 className="latest uppercase font-bold text-gray-600 ">Kurikirana Ibijyanye</h3>
                         <p className="pb-5 font-light">Servivisi zigezweho</p>
                     <Service link="/ubworozi" name="Ubworozi" arrow={arrow} photo={ubworozi} cont="Lorem ipsum dolor sit amet consectetur"/>

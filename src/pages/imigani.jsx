@@ -13,9 +13,9 @@ import inshobera from '../images/inshobera.jpg'
 import { useEffect } from 'react';
 
 const Imigani = () =>{
-useEffect(()=>{
-  window.scrollTo(0,0)
-})
+// useEffect(()=>{
+//   window.scrollTo(0,0)
+// })
 
 
     var data = [
@@ -88,7 +88,7 @@ useEffect(()=>{
               </div>
 
               {/* other options */}
-              <div className='md: p-5 md:w-1/3'>
+              <div className='md:p-5 md:w-1/3'>
               <h3 className="latest uppercase font-bold text-gray-600 ">Kurikirana Ibijyanye</h3>
                         <p className="pb-5 font-light">Servivisi zigezweho</p>
                     <Service link="/ubworozi" name="Ubworozi" arrow={arrow} photo={ubworozi} cont="Lorem ipsum dolor sit amet consectetur"/>
