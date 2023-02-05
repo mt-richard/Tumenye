@@ -8,10 +8,7 @@ const New = (props) => {
             <div className="newspanel bg-white w-80 mb-5 rounded shadow-lg">
                 <div className="photo h-60 ">
                     <img src={props.photo} alt="" className="object-cover h-full w-full rounded-t"></img>
-<<<<<<< HEAD
                     <p className="text-right font-light text-[13px] pt-1 pr-5">Created At : <b>2022-04-55</b></p>
-=======
->>>>>>> 54f27e4315ef8d9872b3b2c10c8fc7996df1b256
                 </div>
                 <div className="text-right w-full ">
                     <p className="font-light text-[13px] pt-1 pr-5">Created At : <b>2022-04-55</b></p>
