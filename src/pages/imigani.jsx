@@ -13,9 +13,9 @@ import inshobera from '../images/inshobera.jpg'
 import { useEffect } from 'react';
 
 const Imigani = () =>{
-// useEffect(()=>{
-//   window.scrollTo(0,0)
-// })
+useEffect(()=>{
+  window.scrollTo(0,0)
+},data)
 
 
     var data = [
@@ -70,16 +70,14 @@ const Imigani = () =>{
                         <div className="qu1">
                             {data.map((item, id) => (
                             <>
-                                <button
+                                <div
                                 key={id}
-                                className="w-full bg-gray-100 p-1 mt-2 rounded text-gray-800"
-                                onClick={() => openubusobanuro(id)}
-                                >
+                                className="w-full bg-gray-100 p-1 mt-2 rounded text-gray-800">
                                 <div className="justify-between w-full flex md:pr-5 md:pl-5">
                                    <span className=' text-gray-600'>{item.umugani}</span> 
 
                                 </div>
-                                </button>
+                                </div>
                                 
                             </>
                             ))}

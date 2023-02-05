@@ -12,9 +12,9 @@ import sakwe from '../images/sakwe.jpg'
 import inshobera from '../images/inshobera.jpg'
 
 const Ubwami = () =>{
-  // useEffect(()=>{
-  //   window.scrollTo(0,0)
-  // })
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },data)
 
     var data = [
         {
