@@ -49,6 +49,7 @@ useEffect(()=>{
       ];
     
       const [selected, setSelected] = useState(null);
+      const [search, setSearch] = useState('');
     
       const openubusobanuro = (id) => {
         if (selected === id) {
@@ -65,10 +66,18 @@ useEffect(()=>{
                <div className="second pt-10 md:p-5 ">
                 <h4 className="text-[#Bd2c4b] font-bold pb-5 uppercase">Imigani Migufi </h4>
                 <p className=" font-light text-gray-600 pb-5">Menya ibisobanuro biruseho ukurikirana ubusobanuro bwa magambo amwe akoreshwa k' Imigani</p>
-
+                <div>
+                  <input type="text" onChange={(e) => setSearch(e.target.value)} />
+                </div>
                     <div className="allumuganis">
                         <div className="qu1">
-                            {data.map((item, id) => (
+                            {data
+                              .filter((item) => {
+                                return search.toLowerCase() === '' 
+                                ? item 
+                                : item.umugani.toLowerCase().includes(search);
+                            })
+                            .map((item, id) => (
                             <>
                                 <div
                                 key={id}
