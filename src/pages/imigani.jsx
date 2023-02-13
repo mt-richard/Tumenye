@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import Service from '../components/service'
-
+import SearchBox from '../components/searchbox'
 import ubuvuzi from '../images/ubuvuzi.png'
 import ubwami from '../images/ubwami.jpg'
 import ubworozi from '../images/ubworozi.jpg'
@@ -15,7 +15,9 @@ import { useEffect } from 'react';
 const Imigani = () =>{
 useEffect(()=>{
   window.scrollTo(0,0)
+  
 },data)
+
 
 
     var data = [
@@ -50,6 +52,7 @@ useEffect(()=>{
     
       const [selected, setSelected] = useState(null);
       const [search, setSearch] = useState('');
+      console.log(search)
     
       const openubusobanuro = (id) => {
         if (selected === id) {
@@ -67,14 +70,28 @@ useEffect(()=>{
                 <h4 className="text-[#Bd2c4b] font-bold pb-5 uppercase">Imigani Migufi </h4>
                 <p className=" font-light text-gray-600 pb-5">Menya ibisobanuro biruseho ukurikirana ubusobanuro bwa magambo amwe akoreshwa k' Imigani</p>
                 <div>
-                  <input type="text" onChange={(e) => setSearch(e.target.value)} />
+                    <form className="flex items-center">   
+                        <label for="voice-search" className="sr-only">Search</label>
+                        <div className="relative w-full">
+                            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                <svg aria-hidden="true" className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                            </div>
+                            <input type="text" value={search} onChange={(e) => setSearch(e.target.value)}  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-200 focus:border-red-200 block w-full pl-10 p-2.5 outline-none" placeholder="Shakisha Imigani..." required />
+                            <button type="button" className="absolute outline-none inset-y-0 right-0 flex items-center pr-3">
+                              <span className='' onClick={(e) => setSearch('')}>x</span>
+                            </button>
+                        </div>
+                        
+                    </form>
+                    {/* <SearchBox/> */}
+                    {/* <input type="text" onChange={(e) => setSearch(e.target.value)} /> */}
                 </div>
-                    <div className="allumuganis">
+                    <div className="allumuganis pb-10 border-b">
                         <div className="qu1">
                             {data
                               .filter((item) => {
                                 return search.toLowerCase() === '' 
-                                ? item 
+                                ? item
                                 : item.umugani.toLowerCase().includes(search);
                             })
                             .map((item, id) => (
@@ -82,8 +99,8 @@ useEffect(()=>{
                                 <div
                                 key={id}
                                 className="w-full bg-gray-100 p-1 mt-2 rounded text-gray-800">
-                                <div className="justify-between w-full flex md:pr-5 md:pl-5">
-                                   <span className=' text-gray-600'>{item.umugani}</span> 
+                                <div key={id} className="justify-between w-full flex md:pr-5 md:pl-5">
+                                   <span key={id} className=' text-gray-600'>{item.umugani}</span> 
 
                                 </div>
                                 </div>
